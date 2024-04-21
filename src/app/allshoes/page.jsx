@@ -1,26 +1,16 @@
-import Link from "next/link";
-import React from "react";
 
-export const metadata = {
-  title: "Home Page",
-  description: "This is my Home Page Discription",
-};
 
-const HomePage = async () => {
-  const respone = await fetch("http://localhost:5000/shoes", {
-    next: {
-      revalidate: 5,
-    },
-  });
-  const SohesData = await respone.json();
-  // throw new Error("Home Page Error");
+const AllShoes = async() => {
 
-  return (
-    <>
-      <h1 className="text-4xl text-center"> This Is my Home Page Two</h1>
-
-      <div className="grid lg:grid-cols-4 gap-4 m-3">
-        {SohesData?.slice(0, 4)?.map((v, index) => (
+    const res=await fetch('http://localhost:5000/shoes',{
+        cache:"no-store"
+    });
+    const allShoes=await res.json();
+    
+    return (
+        <>
+             <div className="grid lg:grid-cols-4 gap-4 m-3">
+        {allShoes?.map((v, index) => (
           <div key={index} className="card w-full bg-base-100 shadow-xl">
             <figure>
               <img
@@ -46,16 +36,8 @@ const HomePage = async () => {
           </div>
         ))}
       </div>
-
-      <div className=" flex justify-center">
-        <Link
-          href="/allshoes"
-          className="badge badge-outline text-black  btn btn-primary">
-          See More
-        </Link>
-      </div>
-    </>
-  );
+        </>
+    );
 };
 
-export default HomePage;
+export default AllShoes;

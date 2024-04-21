@@ -1,0 +1,66 @@
+{
+    "shoes":[
+        {
+            "id": 1,
+            "title": "Smartphone",
+            "description": "A powerful smartphone with advanced features",
+            "price": 600.99
+        },
+        {
+            "id": 2,
+            "title": "Laptop",
+            "description": "High-performance laptop for professional use",
+            "price": 1099
+        },
+        {
+            "id": 3,
+            "title": "Headphones",
+            "description": "Wireless headphones with noise-canceling technology",
+            "price": 199
+        },
+        {
+            "id": 4,
+            "title": "Smartwatch",
+            "description": "Fitness tracker and smartwatch with heart rate monitor",
+            "price": 249
+        },
+        {
+            "id": 5,
+            "title": "Camera",
+            "description": "Professional-grade camera for photography enthusiasts",
+            "price": 799
+        },
+        {
+            "id": 6,
+            "title": "Bluetooth Speaker",
+            "description": "Portable speaker with rich, clear sound",
+            "price": 79
+        },
+        {
+            "id": 7,
+            "title": "Tablet",
+            "description": "Versatile tablet for work and entertainment",
+            "price": 349
+        },
+        {
+            "id": 8,
+            "title": "Gaming Console",
+            "description": "Next-gen gaming console with immersive gaming experience",
+            "price": 449
+        },
+        {
+            "id": 9,
+            "title": "Fitness Tracker",
+            "description": "Activity tracker with heart rate monitoring and GPS",
+            "price": 129
+        }
+    ]
+  ,
+    "comments": [
+      { "id": "1", "text": "a comment about post 1", "postId": "1" },
+      { "id": "2", "text": "another comment about post 1", "postId": "1" }
+    ],
+    "profile": {
+      "name": "typicode"
+    }
+  }
